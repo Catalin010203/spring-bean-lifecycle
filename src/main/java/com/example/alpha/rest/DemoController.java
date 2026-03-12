@@ -18,11 +18,9 @@ public class DemoController {
     private Chef secondChef;
 
     @Autowired
-    public DemoController(@Qualifier("frenchChef") Chef theChef,
-                          @Qualifier("frenchChef") Chef theSecondChef) {
+    public DemoController(@Qualifier("frenchChef") Chef theChef) {
         System.out.println("In constructor: " + getClass().getSimpleName());
         myChef = theChef;
-        secondChef = theSecondChef;
     }
 
     @GetMapping("/check")
