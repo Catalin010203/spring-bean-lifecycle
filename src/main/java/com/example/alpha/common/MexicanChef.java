@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 import util.Chef;
 
 @Component
-@Primary
 public class MexicanChef implements Chef {
 
     public MexicanChef() {
